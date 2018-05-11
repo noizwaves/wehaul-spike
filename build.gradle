@@ -30,7 +30,7 @@ compileTestKotlin {
 }
 jar {
     manifest {
-        attributes "Main-Class": "com.wehaul.spike.application.SpikeApplicationKt"
+        attributes "Main-Class": "com.wehaul.spike.application.ConsoleApplicationKt"
     }
 
     // This line of code recursively collects and copies all of a project's files
