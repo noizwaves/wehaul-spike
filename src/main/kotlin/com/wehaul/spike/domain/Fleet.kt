@@ -5,4 +5,9 @@ class Fleet {
         val trucks = repository.findAll()
         screen.showTrucks(trucks)
     }
+
+    fun addTruck(repository: TruckRepository, vin: String) {
+        val truck = Truck(vin)
+        repository.save(truck)
+    }
 }

@@ -5,10 +5,8 @@ import com.wehaul.spike.domain.TruckListScreen
 
 class ConsoleScreen : TruckListScreen {
     override fun showTrucks(trucks: List<Truck>) {
-        println("[All Trucks in Fleet]")
+        println("## All Trucks in Fleet ##")
 
         for (truck in trucks) println("- ${truck.vin}")
-
-        println("")
     }
 }
